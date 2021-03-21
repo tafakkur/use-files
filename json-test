@@ -1,4 +1,4 @@
-{
+{[
 	{ id: 0, text: "A Coruna" },
 	{ id: 1, text: "Aachen" },
 	{ id: 2, text: "Aalborg" },
@@ -23890,4 +23890,4 @@
 	{ id: 23888, text: "Zychlin" },
 	{ id: 23889, text: "Zyryanka" },
 	{ id: 23890, text: "Zyryanovsk" },
-}
+]}
