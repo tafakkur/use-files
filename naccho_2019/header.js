@@ -1,4 +1,4 @@
-	const response_data = JSON.parse('${e://Field/response_data}');
+// 	const response_data = JSON.parse('${e://Field/response_data}');
 	const question_refs = {
 		QID13: { type: "form", sub_type: "10 fields", questions: { 9: "c0q5-16_9", 10: "c0q5-16_10" } },
 		QID321: { type: "date", sub_type: "date", questions: ["c4q24_month", "c4q24_year"] },
