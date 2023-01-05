@@ -158,8 +158,11 @@
 			return this.clearTimer(element);
 		}.bind(this);
 
+		var defaultTick = function () {}.bind(this);
+
 		element.onComplete = options.onComplete || defaultComplete;
 		element.allowPause = options.allowPause || false;
+		element.onTick = options.onTick || defaultTick;
 		if (element.allowPause) {
 			element.on("click", function () {
 				if (element.paused) {
@@ -186,6 +189,7 @@
 				if (timeLeft < 0) {
 					timeLeft = 0;
 				}
+				element.onTick(timeLeft, element);
 				element.data("timeLeft", timeLeft);
 				this.setFinalValue(this.formatTimeLeft(timeLeft), element);
 			}.bind(this),
