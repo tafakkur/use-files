@@ -66,6 +66,7 @@ if (isNaN(currentLoop)) {
 if (maxLoops < 2) {
 	alert("You need atleast 2 loops for this progress bar.");
 }
-
-createProgressBar(maxLoops);
-updateProgress(currentLoop);
+if (!isNaN(currentLoop) && maxLoops >= 2) {
+	createProgressBar(maxLoops);
+	updateProgress(currentLoop);
+}
