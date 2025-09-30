@@ -9,7 +9,7 @@
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .tooltips.is-after > .tooltip {
-	z-index: 999!important;
+	z-index: 999 !important;
 }
 .sliderHolder {
 	height: 150px;
@@ -17,4 +17,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.pointer.disabled {
+	-webkit-filter: brightness(1);
+	filter: brightness(1);
 }
